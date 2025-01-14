@@ -2,7 +2,7 @@ import pickle
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import CORS
 
-app = Flask(__name__)  # Corrected typo here
+app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the saved ML model
@@ -28,5 +28,5 @@ def predict():
     # Return prediction as JSON
     return jsonify({'prediction': prediction.tolist()})
 
-if __name__ == '__main__':  # Corrected typo here
+if __name__ == '__main__':
     app.run(debug=True)
