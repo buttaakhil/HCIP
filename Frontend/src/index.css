@@ -1,0 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Product Sans', sans-serif;
+}
+
+body{
+    background-color: #029CCB;
+}
