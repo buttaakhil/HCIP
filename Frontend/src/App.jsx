@@ -68,7 +68,7 @@ function App() {
       <img
         src={doctor}
         alt=""
-        className="absolute w-64 left-[-64px] sm:w-72  sm:left-[-80px] md:w-96 bottom-0 md:left-[-120px] pointer-events-none"
+        className="absolute w-48 left-[-56px] sm:w-72  sm:left-[-80px] md:w-96 bottom-0 md:left-[-120px] pointer-events-none"
       />
     </div>
   );
