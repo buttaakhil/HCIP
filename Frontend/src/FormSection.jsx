@@ -85,7 +85,7 @@ const FormSection = ({
         <div className='flex flex-col gap-[24px]'>
           <div className="flex flex-col gap-[14px]">
             <label htmlFor="age" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Age<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
-            <select id="age" value={age} onChange={handleAge} className='pl-[40px] w-24 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]'>
+            <select id="age" value={age} onChange={handleAge} className='pl-[20px] sm:pl-[40px] w-24 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]'>
               {Array.from({ length: 100 }, (_, i) => i + 1).map((age) => (
                 <option key={age} value={age}>
                   {age}
@@ -97,11 +97,11 @@ const FormSection = ({
           <div className='flex gap-[40px]'>
             <div className='flex flex-col gap-[14px]'>
               <label htmlFor="height" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Height(in m)<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
-              <input required type="text" id="height" value={height} onChange={handleHeight} className='outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
+              <input required type="text" id="height" value={height} onChange={handleHeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
             </div>
             <div className='flex flex-col gap-[14px]'>
               <label htmlFor="weight" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Weight(in kg)<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
-              <input required type="text" id="weight" value={weight} onChange={handleWeight} className='outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
+              <input required type="text" id="weight" value={weight} onChange={handleWeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
             </div>
           </div>
 
