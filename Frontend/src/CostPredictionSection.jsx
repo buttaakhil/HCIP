@@ -25,6 +25,7 @@ const CostPredictionSection = () => {
           duration={1}
           className="count-up-text"
         /></span> : <span>XXXX</span>}
+        <span className='text-[#F20004] text-[16px] xl:text-[20px]'>/pm</span>
       </div>
       <img src={Ambulance} className="sm:block hidden absolute w-36 bottom-[-8px] left-[-8px]" alt="" />
       <img src={HospitalBed} className="absolute w-28 sm:w-36 bottom-[-16px] right-[-16px]" alt="" />
