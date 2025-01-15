@@ -28,8 +28,9 @@ const FormSection = ({
     event.preventDefault();
     setIsLoading(true); // Show loader
   
+    const bmi=(weight*10000)/(height*height);
     const data = {
-      features: [age, weight / (height * height), children, region, sex, smoker ? 1 : 0],
+      features: [age, bmi, children, region, sex, smoker ? 1 : 0],
     };
   
     console.log(data);
@@ -96,12 +97,12 @@ const FormSection = ({
 
           <div className='flex gap-[40px]'>
             <div className='flex flex-col gap-[14px]'>
-              <label htmlFor="height" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Height(in m)<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
-              <input required type="text" id="height" value={height} onChange={handleHeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
+              <label htmlFor="height" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Height(in cm)<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
+              <input required type="number" id="height" min={92} max={215} value={height} onChange={handleHeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
             </div>
             <div className='flex flex-col gap-[14px]'>
               <label htmlFor="weight" className='text-lg sm:text-xl lg:text-2xl text-[#474D66]'>Weight(in kg)<sup className='text-[#F20004] text-lg sm:text-xl lg:text-2xl'>*</sup></label>
-              <input required type="text" id="weight" value={weight} onChange={handleWeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
+              <input required type="number" id="weight" min={30} max={230} value={weight} onChange={handleWeight} className='px-4 outline-none w-28 sm:w-40 border-2 divide-solid border-[#029CCB] text-[#029CCB] text-lg sm:text-xl lg:text-2xl rounded-[4px]' />
             </div>
           </div>
 
