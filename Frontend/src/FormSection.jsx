@@ -27,8 +27,10 @@ const FormSection = ({
   const handleForm = async (event) => {
     event.preventDefault();
     setIsLoading(true); // Show loader
-  
-    const bmi=(weight*10000)/(height*height);
+
+    let h=(height/100);
+    let sh=h*h;
+    const bmi=(weight)/(sh);
     const data = {
       features: [age, bmi, children, region, sex, smoker ? 1 : 0],
     };
