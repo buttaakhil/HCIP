@@ -19,7 +19,7 @@ const CostPredictionSection = () => {
       <div className='xl:text-[60px] text-[40px] text-[#474D66] font-semibold text-center'>
         ₹ {cost !== 0 ? <span><CountUp
           from={0}
-          to={parseInt(cost, 10)}
+          to={Math.abs(parseInt(cost, 10))}
           separator=","
           direction="up"
           duration={1}
