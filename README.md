@@ -25,16 +25,14 @@ A full-stack web application that predicts monthly health insurance charges base
 - React
 - React Hooks
 - Axios
-- Tailwind CSS (or your chosen CSS framework)
+- Tailwind CSS
 
 ### Backend
 
 - Python
 - FastAPI
-- Scikit-learn (for ML model)
-- Uvicorn (ASGI server)
+- Scikit-learn
 - Pandas & NumPy
-- Joblib (for loading the trained model)
 
 ## Getting Started
 
